@@ -10,6 +10,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Ensure the GITHUB_TOKEN has write permissions
+permissions:
+  contents: write
+
 jobs:
   # This workflow contains a single job called "build"
   update-readme:
@@ -41,3 +45,5 @@ jobs:
           git add README.md
           git commit -m 'Update README with latest posts'
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
