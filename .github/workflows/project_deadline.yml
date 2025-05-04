@@ -1,0 +1,47 @@
+name: Update README with project deadline Countdown
+
+# Triggers for the workflow
+on:
+  # Schedule the workflow to run every day at midnight UTC
+  schedule:
+    - cron: "0 0 * * *"
+  # Allows the workflow to be manually triggered
+  workflow_dispatch:
+
+# Define the jobs to be run
+jobs:
+  update-readme:
+    # Specify the type of runner to use
+    runs-on: ubuntu-latest
+
+    # Steps to be executed in the job
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Update the README file with the countdown
+      - name: Update README
+        run: |
+          # Set the date of project deadline
+          PROJECT_DEADLINE="2025-06-15"
+
+          # Get today's date in UTC
+          TODAY=$(date -u +"%Y-%m-%d")
+          # Calculate the number of days left until project deadline
+          DAYS_LEFT=$(( ($(date -d $PROJECT_DEADLINE +%s) - $(date -d $TODAY +%s)) / 86400 ))
+          # Replace the placeholder in README.md with the calculated days left
+          sed -i "s/##COUNTDOWN##/${DAYS_LEFT}/g" README.md
+
+      # Step 3: Commit and push the changes to the repository
+      - name: Commit and Push Changes
+        run: |
+          # Configure git with tahayvr account
+          git config --global user.name 'tahayvr'
+          git config --global user.email 'paprikataha@gmail.com'
+          # Add the modified README.md to the staging area
+          git add README.md
+          # Commit the changes with a message
+          git commit -m "Update countdown timer"
+          # Push the changes to the repository
+          git push
