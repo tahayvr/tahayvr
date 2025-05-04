@@ -31,9 +31,9 @@ feed = feedparser.parse(response.content)
 filtered_posts = []
 for post in feed.entries:
     # Check if the post has any of the target tags
-    if 'post_tags' in post:
+    if 'tags' in post:
         # Extract the tag content from CDATA format
-        post_tags = [tag.get('term', '').lower().strip() for tag in post.post_tags]
+        post_tags = [tag.get('term', '').lower().strip() for tag in post.tags]
         
         # Check if any of our target tags match the post tags
         if any(target_tag.lower() in post_tag for target_tag in target_tags for post_tag in post_tags):
@@ -44,8 +44,8 @@ for post in feed.entries:
         break
 
 # If we don't have any filtered posts, exit without updating
-if len(filtered_posts) == 0:
-    print(f"No posts found matching the tags.")
+if len(filtered_posts) != 2:
+    print(f"Not enough posts found matching the tags. Found {len(filtered_posts)} posts.")
     print("README not updated.")
     sys.exit(0)  # Exit the script without error
 
