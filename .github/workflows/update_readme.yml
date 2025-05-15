@@ -43,7 +43,8 @@ jobs:
           git config --global user.name 'tahayvr'
           git config --global user.email 'paprikataha@gmail.com'
           git add README.md
-          git commit -m 'Update README with latest posts'
+          # Only commit if there are changes
+          git diff --quiet && git diff --staged --quiet || git commit -m 'Update README with latest posts'
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
