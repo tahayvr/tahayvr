@@ -34,8 +34,19 @@ jobs:
           TODAY=$(date -u +"%Y-%m-%d")
           # Calculate the number of days left until project deadline
           DAYS_LEFT=$(( ($(date -d $PROJECT_DEADLINE +%s) - $(date -d $TODAY +%s)) / 86400 ))
+
+          # Handle negative days (if deadline has passed)
+          if [ $DAYS_LEFT -lt 0 ]; then
+            DAYS_LEFT=0
+            DISPLAY_TEXT="Completed! 🎉"
+          else
+            DISPLAY_TEXT="${DAYS_LEFT}"
+          fi
+
           # Replace the placeholder in README.md with the calculated days left
-          sed -i "s/<span id=\"countdown\"[^>]*>[0-9]*<\/span>/<span id=\"countdown\" style=\"font-size:1.3em; color:#6e40c9; font-weight:bold\">${DAYS_LEFT}<\/span>/g" README.md
+          sed -i "s/<span id=\"countdown\"[^>]*>[^<]*<\/span>/<span id=\"countdown\" style=\"font-size:1.3em; color:#6e40c9; font-weight:bold\">${DISPLAY_TEXT}<\/span>/g" README.md
+          # Also handle the ##COUNTDOWN## placeholder specifically
+          sed -i "s/##COUNTDOWN##/${DISPLAY_TEXT}/g" README.md
 
       # Step 3: Commit and push the changes to the repository
       - name: Commit and Push Changes
