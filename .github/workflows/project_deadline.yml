@@ -28,7 +28,7 @@ jobs:
       - name: Update README
         run: |
           # Set the date of project deadline
-          PROJECT_DEADLINE="2025-06-15"
+          PROJECT_DEADLINE="2025-06-25"
 
           # Get today's date in UTC
           TODAY=$(date -u +"%Y-%m-%d")
