@@ -1,13 +1,8 @@
-# Taha AKA noiseRandom
-
-- Currently working on building AI Chat apps.
-- Learning AI Engineering.
-- Looking to collaborate on built-in web AI.
-
 ### 🏗 Current Project
 
 - [Terminal Chat LLM](https://github.com/tahayvr/terminal-ai-chat) Days remaining: <span id="countdown" style="font-size:1.3em; color:#6e40c9; font-weight:bold">Completed! 🎉</span>
 
+<!--
 ### 🎨 Tools:
 
 <img align="left" alt="Svelte" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg" />
@@ -23,6 +18,7 @@
 <img align="left" alt="GitHub" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
 <img align="left" alt="Bash" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" />
 <br />
+-->
 
 #
 
