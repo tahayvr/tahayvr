@@ -1,6 +1,6 @@
 ### 🏗 Current Project
 
-- [Terminal Chat LLM](https://github.com/tahayvr/terminal-ai-chat) Days remaining: <span id="countdown" style="font-size:1.3em; color:#6e40c9; font-weight:bold">Completed! 🎉</span>
+- [Terminal Chat LLM](https://github.com/tahayvr/terminal-ai-chat) Days remaining: <span id="countdown" style="font-size:1.3em; color:#6e40c9; font-weight:bold">##COUNTDOWN##</span>
 
 <!--
 ### 🎨 Tools:
