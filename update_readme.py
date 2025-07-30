@@ -18,7 +18,7 @@ try:
         current_content = current_readme.read()
         
         # Find the current countdown value using regex
-        countdown_match = re.search(r'Days to v1.0.0: <span id="countdown" [^>]*>(\d+)</span>', current_content)
+        countdown_match = re.search(r'Days to v1.0: <span id="countdown" [^>]*>(\d+)</span>', current_content)
         current_countdown = countdown_match.group(1) if countdown_match else "##COUNTDOWN##"
 except (FileNotFoundError, AttributeError):
     current_countdown = "##COUNTDOWN##"
