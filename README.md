@@ -3,7 +3,7 @@
 <<<<<<< HEAD
 - [matteblack.nvim](https://github.com/tahayvr/matteblack.nvim) Days to v1.0.0: <span id="countdown" style="font-size:1.3em; color:#6e40c9; font-weight:bold">30</span>
 =======
-- [matteblack.nvim](https://github.com/tahayvr/matteblack.nvim) Days to v1.0: <span id="countdown" style="font-size:1.3em; color:#6e40c9; font-weight:bold">31</span>
+- [matteblack.nvim](https://github.com/tahayvr/matteblack.nvim) Days to v1.0: <span id="countdown" style="font-size:1.3em; color:#6e40c9; font-weight:bold">30</span>
 >>>>>>> a87af94 (change version text to v1.0)
 
 #
