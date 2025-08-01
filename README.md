@@ -1,6 +1,6 @@
 ### 🏗 Current Project
 
-- [matteblack.nvim](https://github.com/tahayvr/matteblack.nvim) Days to v1.0: <span id="countdown" style="font-size:1.3em; color:#6e40c9; font-weight:bold">29</span>
+- [matteblack.nvim](https://github.com/tahayvr/matteblack.nvim) Days to v1.0: <span id="countdown" style="font-size:1.3em; color:#6e40c9; font-weight:bold">28</span>
 
 #
 
