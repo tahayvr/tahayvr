@@ -7,7 +7,7 @@
 ### Latest Essays on [blog.taha.gg](https://blog.taha.gg)
 
 1. <a href='https://blog.taha.gg/essays/digital-cells-digital-hell'>Digital Cells, Digital Hell</a>
-2. <a href='https://blog.taha.gg/essays/digital-currents-the-surrender'>Digital Currents: The Surrender</a>
+2. <a href='https://blog.taha.gg/essays/digital-currents-the-surrender'>Currents & Surrender</a>
 
 <!--
 badges: https://devicon.dev/
