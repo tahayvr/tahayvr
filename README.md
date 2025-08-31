@@ -1,5 +1,6 @@
 ### 🏗 Current Projects
 
+- [Omarchist](https://github.com/tahayvr/omarchist)
 - [matteblack.nvim](https://github.com/tahayvr/matteblack.nvim)
 
 #
