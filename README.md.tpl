@@ -1,9 +1,7 @@
 ### 🏗 Current Projects
 
-- [Omarchist](https://github.com/tahayvr/omarchist)
-- [matteblack.nvim](https://github.com/tahayvr/matteblack.nvim)
-
-#
+- [Omarchist](https://github.com/tahayvr/omarchist) A GUI app for Omarchy Linux
+- [Matte Black Theme](https://matteblacktheme.com) A low distraction dark theme for Omarchy, VScode, Zed, and Neovim
 
 <!--
 ### Latest Essays on [blog.taha.gg](https://blog.taha.gg)
