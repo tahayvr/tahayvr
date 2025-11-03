@@ -3,13 +3,7 @@
 - [Omarchist](https://github.com/tahayvr/omarchist) A GUI app for Omarchy Linux
 - [Matte Black Theme](https://matteblacktheme.com) A low distraction dark theme for Omarchy, VScode, Zed, and Neovim
 
-<!--
-### Latest Essays on [blog.taha.gg](https://blog.taha.gg)
+### Writing:
 
 1. <a href='https://blog.taha.gg/essays/digital-cells-digital-hell'>Digital Cells, Digital Hell</a>
 2. <a href='https://blog.taha.gg/essays/digital-currents-the-surrender'>Currents & Surrender</a>
-
-
-badges: https://devicon.dev/
-Emoji cheatsheet: https://www.webfx.com/tools/emoji-cheat-sheet/
--->

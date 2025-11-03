@@ -2,26 +2,14 @@ import requests  # Import the requests library to make HTTP requests
 import feedparser  # Import the feedparser library to parse RSS feeds
 from string import Template  # Import the Template class from the string module for template substitution
 import sys  # Import sys to exit the script if needed
-import re  # Import the regex module for extracting the countdown value
 
-# URL of the blog.taha.gg RSS feed
-rss_url = "https://blog.taha.gg/rss.xml"
+# URL of the taha.gg RSS feed
+rss_url = "https://taha.gg/rss.xml"
 
 # List of tags to filter by
 target_tags = [
     "projects"
 ]
-
-# First read the current README to extract the countdown value
-try:
-    with open("README.md", "r") as current_readme:
-        current_content = current_readme.read()
-        
-        # Find the current countdown value using regex
-        countdown_match = re.search(r'Days to v1.0: <span id="countdown" [^>]*>(\d+)</span>', current_content)
-        current_countdown = countdown_match.group(1) if countdown_match else "##COUNTDOWN##"
-except (FileNotFoundError, AttributeError):
-    current_countdown = "##COUNTDOWN##"
 
 # Fetch the RSS feed
 response = requests.get(rss_url)
@@ -76,9 +64,6 @@ readme_content = template.substitute(
     news_post_1=news_posts[0],
     news_post_2=news_posts[1]
 )
-
-# Replace the ##COUNTDOWN## placeholder with the current countdown value
-readme_content = readme_content.replace("##COUNTDOWN##", current_countdown)
 
 # Debug print to verify the final content
 print("Updated README content:")
