@@ -5,6 +5,6 @@
 
 ### Writing:
 
-1. <a href='https://taha.gg/essays/digital-cells-digital-hell'>Digital Cells, Digital Hell</a>
-2. <a href='https://taha.gg/essays/currents-and-surrender'>Currents & Surrender</a>
+1. <a href='https://taha.gg/essays/the-interface-trap'>The Interface Trap</a>
+2. <a href='https://taha.gg/essays/digital-cells-digital-hell'>Digital Cells, Digital Hell</a>
 
