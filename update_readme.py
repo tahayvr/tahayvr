@@ -8,7 +8,8 @@ rss_url = "https://taha.gg/rss.xml"
 
 # List of tags to filter by
 target_tags = [
-    "projects"
+    "projects",
+    "tech"
 ]
 
 # Fetch the RSS feed
