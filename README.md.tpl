@@ -7,4 +7,5 @@
 
 1. $news_post_1
 2. $news_post_2
+3. $news_post_3
 
