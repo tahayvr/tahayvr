@@ -1,6 +1,7 @@
 ### 🏗 Current Projects
 
 - [Omarchist](https://github.com/tahayvr/omarchist) A GUI app for Omarchy Linux
+- [Postcard](https://github.com/tahayvr/postcard) Make a screenshot worth posting. An Omarchy shell plugin.
 - [Zedx](https://github.com/tahayvr/zedx) Scaffold Zed Editor extensions and sync your settings across machines
 
 ### Writing:
