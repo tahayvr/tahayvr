@@ -4,7 +4,6 @@
 - [Postcard](https://github.com/tahayvr/postcard) Make a screenshot worth posting. An Omarchy shell plugin.
 - [Zedx](https://github.com/tahayvr/zedx) Scaffold Zed Editor extensions and sync your settings across machines
 
-
 ### Writing:
 
 1. <a href='https://taha.gg/blog/essays/how-i-made-the-omarchy-logo/'>How I Made the Omarchy Logo</a>
